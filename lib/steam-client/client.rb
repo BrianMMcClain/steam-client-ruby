@@ -7,5 +7,7 @@ module SteamClient
       @api_key = api_key
     end
 
+    
+
   end
 end
