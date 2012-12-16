@@ -15,5 +15,10 @@ module SteamClient
     	return Profile.from_xml(xml)
     end
 
+    def find_profile_by_id(id)
+    	url = "http://steamcommunity.com/profiles/#{id}?xml=1"
+    	xml = RestClient.get url
+    	return Profile.from_xml(xml)
+    end
   end
 end

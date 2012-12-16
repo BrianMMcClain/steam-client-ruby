@@ -10,8 +10,19 @@ describe SteamClient::Client do
   it "should get a profile by name" do
   	VCR.use_cassette('steam_profile') do
     	profile = @client.find_profile_by_name("robinwalker")
-    	profile.class.should == SteamClient::Profile
+    	profile.class.should be SteamClient::Profile
+    	profile.steamID64.should match "76561197960435530"
+    	profile.customURL.should match "robinwalker"
     end
+  end
+
+  it "should get a profile by id" do
+  	VCR.use_cassette('steam_profile_id') do
+  		profile = @client.find_profile_by_id("76561197960435530")
+  		profile.class.should == SteamClient::Profile
+  		profile.steamID64.should match "76561197960435530"
+  		profile.customURL.should match "robinwalker"
+  	end
   end
 
 end
