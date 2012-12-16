@@ -33,5 +33,17 @@ module SteamClient
         profile.friends = friends
         return friends
     end
+
+    def get_games_from_profile(profile)
+        url = "http://steamcommunity.com/profiles/#{profile.steamID64}/games\?xml\=1"
+        xml = RestClient.get url
+        hGames = Crack::XML.parse xml
+        games = []
+        hGames['gamesList']['games']['game'].each do |game|
+            games << Game.new(game)
+        end
+        profile.games = games
+        return games
+    end
   end
 end

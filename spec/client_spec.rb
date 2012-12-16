@@ -28,6 +28,7 @@ describe SteamClient::Client do
   it "should get a profile's friend list" do
       VCR.use_cassette('steam_profile_friends') do
         friends = @client.get_friends_from_profile(@profile)
+        friends.count.should eq(269)
         friends.empty?.should_not be true
         @profile.friends.empty?.should_not be true
       end
@@ -35,7 +36,10 @@ describe SteamClient::Client do
 
   it "should get a profiles game list" do
     VCR.use_cassette('steam_profile_game_list') do
-      
+      games = @client.get_games_from_profile(@profile)
+      games.count.should eq(2046)
+      games.empty?.should_not be true
+      @profile.games.empty?.should_not be true
     end
   end
 end

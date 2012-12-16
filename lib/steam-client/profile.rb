@@ -18,11 +18,12 @@ module SteamClient
 
   class Profile
     
-    attr_accessor :steamID64, :onlineState, :avatarIcon, :avatarMedium, :avatarFull, :customURL, :hoursPlayed2Wk, :location, :realname, :friends
+    attr_accessor :steamID64, :onlineState, :avatarIcon, :avatarMedium, :avatarFull, :customURL, :hoursPlayed2Wk, :location, :realname, :friends, :games
 
     def initialize(steamID64 = nil)
       self.steamID64 = steamID64
       @friends = []
+      @games = []
     end
     
     def self.from_xml(xml)
@@ -43,6 +44,7 @@ module SteamClient
       profile.location = p['profile']['location']
       profile.realname = p['profile']['realname']
       profile.friends = []
+      profile.games = []
 
       case p['profile']['onlineState']
       when 'online'
@@ -53,14 +55,6 @@ module SteamClient
       	profile.onlineState = SteamClient::OnlineState::UNKNOWN
       end
       return profile
-    end
-
-    def friends(update = false)
-    	if @friends.nil? or @friends.empty? or update
-    		puts "Should get friends"
-    	end
-
-    	return @friends
     end
   end
 end
