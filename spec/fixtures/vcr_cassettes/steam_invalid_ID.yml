@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/1?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1GcmksIDE1LURlYy0y
+        MDE3IDAyOjM3OjM1IEdNVDsgcGF0aD0v
+      - !binary |-
+        c2Vzc2lvbmlkPU1qQTJNalEwTURReE5BJTNEJTNEOyBwYXRoPS8=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        U3VuLCAxNiBEZWMgMjAxMiAwMzozNzozNSBHTVQ=
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC94bWw=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTQ3
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U3VuLCAxNiBEZWMgMjAxMiAwMjozNzozNSBHTVQ=
+      !binary "WC1WYXJuaXNo":
+      - !binary |-
+        MTcwOTk0ODYwMg==
+      !binary "QWdl":
+      - !binary |-
+        MA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAzzMMQ7CMAwAwK8Y77SwMSSpKhAvCFPVoSQuRErtKG4R/J4F
+        8YA7072XDC+qmoQtHpsDAnGQmPhh8eav+xOCrhPHKQuTxQ8pds5U0iKs5AzV
+        KtWZ3XC+9L4f/JNAC4U0J4pQqswpEwTZcgSWFe4Es2wcm3F0pv3h9t99AQAA
+        //8DAMxsI/+QAAAA
+    http_version: 
+  recorded_at: Sun, 16 Dec 2012 02:37:34 GMT
+recorded_with: VCR 2.3.0

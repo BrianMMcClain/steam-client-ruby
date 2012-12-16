@@ -2,6 +2,14 @@ require 'crack'
 
 module SteamClient
 
+  module Error
+  	class ProfileNotFound < StandardError
+  		def message
+  			"The specified profile could not be found"
+  		end
+  	end
+  end
+
   module OnlineState
   	ONLINE = "online",
   	OFFLINE = "offline"
@@ -18,6 +26,11 @@ module SteamClient
     
     def self.from_xml(xml)
       p = Crack::XML.parse(xml)
+
+      if p.has_key? 'response' and p['response'].has_key? 'error'
+      	raise SteamClient::Error::ProfileNotFound
+      end
+
       profile = Profile.new
       
       profile.steamID64 = p['profile']['steamID64']
