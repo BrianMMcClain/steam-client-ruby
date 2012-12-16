@@ -18,7 +18,7 @@ module SteamClient
 
   class Profile
     
-    attr_accessor :steamID64, :onlineState, :avatarIcon, :avatarMedium, :avatarFull, :customURL, :hoursPlayed2Wk, :location, :realname, :friends, :games
+    attr_accessor :steamID, :steamID64, :onlineState, :avatarIcon, :avatarMedium, :avatarFull, :customURL, :hoursPlayed2Wk, :location, :realname, :friends, :games
 
     def initialize(steamID64 = nil)
       self.steamID64 = steamID64
@@ -35,6 +35,7 @@ module SteamClient
 
       profile = Profile.new
       
+      profile.steamID = p['profile']['steamID']
       profile.steamID64 = p['profile']['steamID64']
       profile.avatarIcon = p['profile']['avatarIcon']
       profile.avatarMedium = p['profile']['avatarMedium']

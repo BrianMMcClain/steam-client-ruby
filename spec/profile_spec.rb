@@ -7,6 +7,7 @@ describe SteamClient::Profile do
 			profile = @client.find_profile_by_name("robinwalker")
 
 	    	profile.class.should be SteamClient::Profile
+	    	profile.steamID.should match "Robin"
 	    	profile.steamID64.should match "76561197960435530"
 	      	profile.avatarIcon.should match "http://media.steampowered.com/steamcommunity/public/images/avatars/f1/f1dd60a188883caf82d0cbfccfe6aba0af1732d4.jpg"
 	      	profile.avatarMedium.should match "http://media.steampowered.com/steamcommunity/public/images/avatars/f1/f1dd60a188883caf82d0cbfccfe6aba0af1732d4_medium.jpg"
