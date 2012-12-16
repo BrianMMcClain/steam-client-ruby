@@ -7,9 +7,11 @@ describe SteamClient::Client do
     client.api_key.should == "XXXXXXXXX"
   end
   
-  it "should get a profile" do
-    client = SteamClient::Client.new("XXXXXXXXX")
-    profile = client.get_profile("some_person")
-    profile.class.should == SteamClient::Profile.class
+  it "should get a profile by name" do
+  	VCR.use_cassette('steam_profile') do
+    	profile = @client.find_profile_by_name("robinwalker")
+    	profile.class.should == SteamClient::Profile
+    end
   end
+
 end
