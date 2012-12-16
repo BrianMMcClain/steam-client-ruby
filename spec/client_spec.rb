@@ -25,4 +25,13 @@ describe SteamClient::Client do
   	end
   end
 
+  it "should get a profile's friend list" do
+      VCR.use_cassette('steam_profile_friends') do
+        client = SteamClient::Client.new
+        profile = client.find_profile_by_name("robinwalker")
+        friends = client.get_friends_from_profile(profile)
+        friends.empty?.should_not be true
+        profile.friends.empty?.should_not be true
+      end
+  end
 end
