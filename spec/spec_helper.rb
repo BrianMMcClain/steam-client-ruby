@@ -10,6 +10,9 @@ end
 
 RSpec.configure do |config|
 	config.before(:all) do
-		@client = SteamClient::Client.new("XXXXXXXXX")
+		VCR.use_cassette('steam_profile_id') do
+			@client = SteamClient::Client.new("XXXXXXXXX")
+			@profile = @client.find_profile_by_id("76561197960435530")
+		end
 	end
 end

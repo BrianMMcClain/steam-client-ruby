@@ -34,4 +34,10 @@ describe SteamClient::Client do
         profile.friends.empty?.should_not be true
       end
   end
+
+  it "should get a profiles game list" do
+    VCR.use_cassette('steam_profile_game_list') do
+      puts @profile.inspect
+    end
+  end
 end
