@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "steam-client"
   gem.require_paths = ["lib"]
   gem.version       = SteamClient::VERSION
+
+  gem.add_dependency 'rest-client', '1.6.7'
+  gem.add_dependency 'crack', '0.3.1'
 end
