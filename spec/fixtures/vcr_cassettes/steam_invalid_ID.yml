@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://steamcommunity.com/profiles/1?xml=1
+    uri: http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=XXXXXXXXX&steamids=1
     body:
       encoding: US-ASCII
       string: ''
@@ -16,55 +16,19 @@ http_interactions:
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        QXBhY2hl
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1GcmksIDE1LURlYy0y
-        MDE3IDAyOjM3OjM1IEdNVDsgcGF0aD0v
-      - !binary |-
-        c2Vzc2lvbmlkPU1qQTJNalEwTURReE5BJTNEJTNEOyBwYXRoPS8=
-      !binary "RXhwaXJlcw==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwMzozNzozNSBHTVQ=
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC94bWw=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MTQ3
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwMjozNzozNSBHTVQ=
-      !binary "WC1WYXJuaXNo":
-      - !binary |-
-        MTcwOTk0ODYwMg==
-      !binary "QWdl":
-      - !binary |-
-        MA==
-      !binary "Vmlh":
-      - !binary |-
-        MS4xIHZhcm5pc2g=
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
+      Date:
+      - Sat, 22 Dec 2012 07:19:42 GMT
+      Expires:
+      - Sat, 22 Dec 2012 07:19:42 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '44'
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAzzMMQ7CMAwAwK8Y77SwMSSpKhAvCFPVoSQuRErtKG4R/J4F
-        8YA7072XDC+qmoQtHpsDAnGQmPhh8eav+xOCrhPHKQuTxQ8pds5U0iKs5AzV
-        KtWZ3XC+9L4f/JNAC4U0J4pQqswpEwTZcgSWFe4Es2wcm3F0pv3h9t99AQAA
-        //8DAMxsI/+QAAAA
+      encoding: US-ASCII
+      string: ! "{\n\t\"response\": {\n\t\t\"players\": [\n\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Sun, 16 Dec 2012 02:37:34 GMT
+  recorded_at: Sat, 22 Dec 2012 07:19:26 GMT
 recorded_with: VCR 2.3.0

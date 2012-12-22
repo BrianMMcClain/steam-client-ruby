@@ -1,4 +1,5 @@
 require 'crack'
+require 'json'
 
 module SteamClient
 
@@ -24,6 +25,32 @@ module SteamClient
       self.steamID64 = steamID64
       @friends = []
       @games = []
+    end
+    
+    def self.from_json(json)
+      p = JSON.parse(json)
+      
+      if p['response']['players'].empty?
+        raise SteamClient::Error::ProfileNotFound
+      end
+      
+      player = p['response']['players'].first
+      
+      profile = Profile.new
+      profile.steamID = player['personaname']
+      profile.steamID64 =player['steamid']
+      profile.avatarIcon = player['avatar']
+      profile.avatarMedium = player['avatarmedium']
+      profile.avatarFull = player['avatarfull']
+      profile.customURL = player['profileurl']
+      profile.hoursPlayed2Wk = 0.0
+      profile.location = "#{player['loccityid'] || ''} #{player['locstatecode'] || ''} #{player['loccountrycode']}".strip
+      profile.realname = player['realname']
+      profile.friends = []
+      profile.games = []
+      profile.onlineState = SteamClient::OnlineState::UNKNOWN
+      
+      return profile     
     end
     
     def self.from_xml(xml)

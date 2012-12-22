@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem 'rest-client', '1.6.7'
 gem 'crack', '0.3.1'
+gem 'json', '1.7.5'
 
 group :test do
   gem 'rake', '0.9.2.2'

@@ -1,0 +1,242 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '798'
+      Date:
+      - Sat, 22 Dec 2012 07:18:41 GMT
+      X-Varnish:
+      - '2589736649'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html>\n<html>\n
+        \ <head>\n    <title>Sorry!</title>\n  </head>\n  <body style=\"background-color:
+        #000000; color: #ffffff;font-family: Arial, Helvetica, sans-serif; font-size:
+        12px; background-image: url( 'http://cdn.store.steampowered.com/public/images/v5/content_bg.png');
+        background-repeat: repeat-x; background-position: top;) \">\n    <div style=\"width:
+        940px; margin: 16px auto;\">\n      <img src=\"http://cdn.store.steampowered.com/public/images/v5/globalheader_logo.png\"
+        style=\"float: right; margin-top: 30px;\">\n      <br><h1>Sorry</h1>\n      <h2>The
+        Steam Community is currently unavailable.  Please try again later.</h2>\n
+        \     <br><br><br><br><br>\n      <p>Error 503 Service Unavailable</p>\n      <p>XID:
+        2589736649</p>\n    </div>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:41 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: !binary |-
+        Rm91bmQ=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1UaHUsIDIxLURlYy0y
+        MDE3IDA3OjE4OjQzIEdNVDsgcGF0aD0v
+      - !binary |-
+        c2Vzc2lvbmlkPU1qRXlNRE16TVRVNE1BJTNEJTNEOyBwYXRoPS8=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwODoxODo0MyBHTVQ=
+      !binary "TG9jYXRpb24=":
+      - !binary |-
+        aHR0cDovL3N0ZWFtY29tbXVuaXR5LmNvbS9pZC9yb2JpbndhbGtlci8/eG1s
+        PTEmbD1lbmdsaXNo
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PVVURi04
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjY=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwNzoxODo0NCBHTVQ=
+      !binary "WC1WYXJuaXNo":
+      - !binary |-
+        MjU4OTczNzczNw==
+      !binary "QWdl":
+      - !binary |-
+        MA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:44 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/id/robinwalker/?l=english&xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - Steam_Language=english; sessionid=MjEyMDMzMTU4MA==
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1UaHUsIDIxLURlYy0y
+        MDE3IDA3OjE4OjQ2IEdNVDsgcGF0aD0v
+      - !binary |-
+        c2Vzc2lvbmlkPU1USTBPVEV6TmpJM01BJTNEJTNEOyBwYXRoPS8=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwODoxODo0NiBHTVQ=
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC94bWw7IGNoYXJzZXQ9dXRmLTg=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjQ5Mw==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwNzoxODo0OCBHTVQ=
+      !binary "WC1WYXJuaXNo":
+      - !binary |-
+        MjU4OTc0MjY5OQ==
+      !binary "QWdl":
+      - !binary |-
+        MA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        Hfw/AAAA//8DANSXKidPLgAA
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:48 GMT
+recorded_with: VCR 2.3.0

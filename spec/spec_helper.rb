@@ -11,7 +11,8 @@ end
 RSpec.configure do |config|
 	config.before(:all) do
 		VCR.use_cassette('steam_profile_id') do
-			@client = SteamClient::Client.new("XXXXXXXXX")
+      api_key = ENV['STEAM_CLIENT_API_KEY'] || "XXXXXXXXX"
+			@client = SteamClient::Client.new(api_key)
 			@profile = @client.find_profile_by_id("76561197960435530")
 		end
 	end

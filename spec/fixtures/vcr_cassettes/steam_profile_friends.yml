@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://steamcommunity.com/id/robinwalker?xml=1
+    uri: http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=XXXXXXXXX&relationship=friend&steamid=76561197960435530
     body:
       encoding: US-ASCII
       string: ''
@@ -16,282 +16,423 @@ http_interactions:
   response:
     status:
       code: 200
-      message: !binary |-
-        T0s=
+      message: OK
     headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        QXBhY2hl
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1GcmksIDE1LURlYy0y
-        MDE3IDA2OjA4OjU2IEdNVDsgcGF0aD0v
-      - !binary |-
-        c2Vzc2lvbmlkPU5qWXlOek13TlRZeDsgcGF0aD0v
-      !binary "RXhwaXJlcw==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNzowODo1NiBHTVQ=
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC94bWw7IGNoYXJzZXQ9dXRmLTg=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MjYzNQ==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNjowODo1NyBHTVQ=
-      !binary "WC1WYXJuaXNo":
-      - !binary |-
-        MTcyNTYxOTQ4Nw==
-      !binary "QWdl":
-      - !binary |-
-        MA==
-      !binary "Vmlh":
-      - !binary |-
-        MS4xIHZhcm5pc2g=
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        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
-        /L2Q/z2T7ndo/gsAAP//AwDCijUrhDMAAA==
-    http_version: 
-  recorded_at: Sun, 16 Dec 2012 06:08:56 GMT
-- request:
-    method: get
-    uri: http://steamcommunity.com/profiles/76561197960435530/friends?xml=1
+      Date:
+      - Sat, 22 Dec 2012 07:19:04 GMT
+      Expires:
+      - Sat, 22 Dec 2012 07:19:04 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '28341'
     body:
       encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - ! '*/*; q=0.5, application/xml'
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 302
-      message: !binary |-
-        Rm91bmQ=
-    headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        QXBhY2hl
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1GcmksIDE1LURlYy0y
-        MDE3IDA2OjA5OjI1IEdNVDsgcGF0aD0v
-      - !binary |-
-        c2Vzc2lvbmlkPU1UYzVORFl5TURNd09BJTNEJTNEOyBwYXRoPS8=
-      !binary "RXhwaXJlcw==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNzowOToyNSBHTVQ=
-      !binary "TG9jYXRpb24=":
-      - !binary |-
-        aHR0cDovL3N0ZWFtY29tbXVuaXR5LmNvbS9pZC9yb2JpbndhbGtlci9mcmll
-        bmRzP3htbD0xJmw9ZW5nbGlzaA==
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC9odG1sOyBjaGFyc2V0PVVURi04
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MjY=
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNjowOToyNSBHTVQ=
-      !binary "WC1WYXJuaXNo":
-      - !binary |-
-        MTU0NzczODM4MA==
-      !binary "QWdl":
-      - !binary |-
-        MA==
-      !binary "Vmlh":
-      - !binary |-
-        MS4xIHZhcm5pc2g=
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+      string: ! "{\n\t\"friendslist\": {\n\t\t\"friends\": [\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960265731\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960265738\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960265740\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960265747\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960265749\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960268093\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1251433222\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960270258\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960270457\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1257142334\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960271661\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1327552405\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960273963\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960274006\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960274521\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1283486787\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960277670\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1317366269\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960279106\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1252902778\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960282696\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960282709\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960299622\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960304647\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960317684\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1251865307\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960323774\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960333589\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960359661\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960389850\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1327992364\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960411603\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1346991873\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960423941\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960434622\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1278879949\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960491601\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1230537028\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960505737\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1327552425\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960508417\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1298569205\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960522471\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1230537024\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960549564\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960563532\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960568847\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1333079735\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960575737\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1331440292\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960691398\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1333079737\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960789988\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197960860649\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197960879472\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1331440322\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961004348\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1233376941\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961016107\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1299561164\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961048326\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1305088151\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961301890\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961302949\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961513395\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961567067\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1280805626\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961635855\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1305088152\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961697514\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1328471606\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961725694\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1249447084\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961903764\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1238215828\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197961963491\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1335800301\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197961987005\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1261202570\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197962205142\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1246690451\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197962313932\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197962783665\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197962833771\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1246340239\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197962844216\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197962868341\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1280805697\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197963562041\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1300220501\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197963585314\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197963687679\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1251777207\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197964094017\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197964115159\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197964770089\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1325652265\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197964865846\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197965532939\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1350963678\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197965576021\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1258548993\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197965640811\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1267240082\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197965656609\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347214065\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197965686610\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1312001126\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197966056073\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1234811002\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197966089529\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1348200708\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197966106312\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197966109336\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1284524815\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197966589084\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197966591880\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1282803048\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197966652320\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197967027289\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197967454254\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197967649865\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197967757010\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1313043443\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197967823929\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1268222378\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197967990561\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968282875\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968304048\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968343660\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968403639\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1274246179\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968411673\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1258327120\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968452293\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968459473\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1286855142\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968493120\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1318097746\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968499581\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1298522642\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968546869\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1249447135\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968575517\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1283140137\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197968662512\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1243048442\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197968887855\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969013812\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1320344898\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969044631\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1283486596\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969204208\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969221324\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1261119417\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969266938\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1285385050\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969363440\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969363506\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969389470\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969400141\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969420896\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1286855159\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197969518075\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1287104617\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197969593376\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1251777234\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970125572\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970166754\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1283486539\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970188759\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1258311040\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970280218\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1254978747\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970323416\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1272505770\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970389205\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970404169\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1260340950\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970496388\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970498549\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1305400189\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970522250\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1252469387\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970545345\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970553411\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1280805662\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970565175\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970569650\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970572119\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1262234024\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970610844\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970667119\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1331440337\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970761369\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970792670\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1252469394\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197970822785\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197970953718\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971025345\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1333079747\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197971042536\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971049296\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1232168115\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197971057511\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1312778874\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971124276\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197971128200\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1254974887\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971238476\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1249447170\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197971332340\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347679040\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971400048\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1336893966\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197971596380\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1242272703\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197971951755\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197972345559\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1278650650\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197972382063\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1268122624\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197972790745\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1244528575\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197972799883\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1346896735\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197973185198\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1257142395\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197973639804\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197973935677\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1263011600\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197974284838\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1295845647\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197974616601\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1319599842\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197974777179\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1289893342\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197974807412\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197975029215\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197975724041\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1337920161\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197975914763\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197976244853\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1299561095\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197977035150\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197977450070\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347343394\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197978181900\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1234074199\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197978236369\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1258442642\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197978703046\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197979187556\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197979435127\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1236474691\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197979480245\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1305088194\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197979536477\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1246340263\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197980388693\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1275536464\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197981291930\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1334029416\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197981483266\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1274246297\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197982227246\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197982240193\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197982656766\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1257142470\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197982998220\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1316632423\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197983491300\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197983540634\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347896489\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197983600912\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1350704127\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197984476370\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1252037969\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197984734596\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1248754933\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197984834077\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1289893389\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197985244272\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197985279592\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197985536977\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1350704086\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197985866466\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1289893378\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197986695451\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1244788670\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197987101307\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1274940404\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197987393094\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1298522644\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197988042654\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1265486190\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197988197730\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1276488085\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197988221501\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1283451661\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197989701891\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1316837417\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197989870485\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197990187780\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1252902827\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197990525201\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1252469413\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197990739280\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1284525188\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197990859622\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197990949369\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1230537020\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197991390878\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197991518342\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1347601219\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197991751968\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197991885937\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197991899002\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1286082214\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992107512\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992152522\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1280287926\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992219796\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1311828146\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992295963\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1278650658\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992459511\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1291491332\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992508821\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992577188\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992594628\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992720132\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197992765734\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1241840468\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197992927490\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197993345099\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197993426087\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1294642922\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197993552969\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1286082108\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197993620247\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1263011646\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197993630232\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1249148398\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197993751379\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1283486349\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197994206792\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1353216207\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197994223774\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1299734097\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197994242870\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347937824\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197994359533\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1276230703\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197994365894\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1294605278\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197994894204\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1335159140\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197995035454\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1330072067\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197995390971\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1296715379\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197995620521\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1242272781\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197996226415\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1352804786\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197996599994\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1298522768\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197997296694\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1250832422\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197997374662\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1274246279\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197997412731\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1346896747\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197997491987\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1252728718\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197997640852\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1253255596\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197997728531\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1346823518\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197998048607\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1283486669\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197998113407\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1285649640\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197998287308\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1316499408\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197998342021\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1286338395\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561197999644177\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1335800276\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561197999982261\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1284867741\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198000167056\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1274246426\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198000175595\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1241840395\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198000198761\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1274246470\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198002118002\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1343104953\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198002826921\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1299561235\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198004860018\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1290812641\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198006562518\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1353197877\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198007105082\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1290812487\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198007754155\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1290812651\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198009095613\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1325652348\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198010062752\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1351306468\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198010168695\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1248755147\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198011246300\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1330192563\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198011742416\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1348542115\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198012882785\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1331440377\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198013560482\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1283486799\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198014254115\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1254806199\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198014273977\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1347773002\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198015122013\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1284525412\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198015234450\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1351306412\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198026562132\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1346715463\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198026610207\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1346739192\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198027956837\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1316052135\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198034664666\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1353283111\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198037225309\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1297316926\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198037252562\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1346219433\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198042468117\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1347491840\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198045945967\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1350704096\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198046983307\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1346817023\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\": \"76561198050396055\",\n\t\t\t\t\"relationship\":
+        \"friend\",\n\t\t\t\t\"friend_since\": 1318826201\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"steamid\":
+        \"76561198075069280\",\n\t\t\t\t\"relationship\": \"friend\",\n\t\t\t\t\"friend_since\":
+        1352859103\n\t\t\t}\n\t\t]\n\t\t\n\t}\n}"
     http_version: 
-  recorded_at: Sun, 16 Dec 2012 06:09:24 GMT
-- request:
-    method: get
-    uri: http://steamcommunity.com/id/robinwalker/friends?l=english&xml=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - ! '*/*; q=0.5, application/xml'
-      Accept-Encoding:
-      - gzip, deflate
-      Cookie:
-      - Steam_Language=english; sessionid=MTc5NDYyMDMwOA==
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: !binary |-
-        T0s=
-    headers:
-      !binary "U2VydmVy":
-      - !binary |-
-        QXBhY2hl
-      !binary "U2V0LUNvb2tpZQ==":
-      - !binary |-
-        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1GcmksIDE1LURlYy0y
-        MDE3IDA2OjA5OjI2IEdNVDsgcGF0aD0v
-      - !binary |-
-        c2Vzc2lvbmlkPU1UVTNOak0xTmpVME1BJTNEJTNEOyBwYXRoPS8=
-      !binary "RXhwaXJlcw==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNzowOToyNiBHTVQ=
-      !binary "Q29udGVudC1FbmNvZGluZw==":
-      - !binary |-
-        Z3ppcA==
-      !binary "VmFyeQ==":
-      - !binary |-
-        QWNjZXB0LUVuY29kaW5n
-      !binary "Q29udGVudC1UeXBl":
-      - !binary |-
-        dGV4dC94bWw7IGNoYXJzZXQ9dXRmLTg=
-      !binary "Q29udGVudC1MZW5ndGg=":
-      - !binary |-
-        MTcxNg==
-      !binary "RGF0ZQ==":
-      - !binary |-
-        U3VuLCAxNiBEZWMgMjAxMiAwNjowOToyNiBHTVQ=
-      !binary "WC1WYXJuaXNo":
-      - !binary |-
-        MTU0NzczOTc2Mg==
-      !binary "QWdl":
-      - !binary |-
-        MA==
-      !binary "Vmlh":
-      - !binary |-
-        MS4xIHZhcm5pc2g=
-      !binary "Q29ubmVjdGlvbg==":
-      - !binary |-
-        a2VlcC1hbGl2ZQ==
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        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
-        LE6vKAAA
-    http_version: 
-  recorded_at: Sun, 16 Dec 2012 06:09:25 GMT
+  recorded_at: Sat, 22 Dec 2012 07:18:48 GMT
 recorded_with: VCR 2.3.0

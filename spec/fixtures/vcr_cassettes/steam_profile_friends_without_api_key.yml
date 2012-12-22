@@ -1,0 +1,325 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530/friends?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '798'
+      Date:
+      - Sat, 22 Dec 2012 07:18:48 GMT
+      X-Varnish:
+      - '2589750009'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html>\n<html>\n
+        \ <head>\n    <title>Sorry!</title>\n  </head>\n  <body style=\"background-color:
+        #000000; color: #ffffff;font-family: Arial, Helvetica, sans-serif; font-size:
+        12px; background-image: url( 'http://cdn.store.steampowered.com/public/images/v5/content_bg.png');
+        background-repeat: repeat-x; background-position: top;) \">\n    <div style=\"width:
+        940px; margin: 16px auto;\">\n      <img src=\"http://cdn.store.steampowered.com/public/images/v5/globalheader_logo.png\"
+        style=\"float: right; margin-top: 30px;\">\n      <br><h1>Sorry</h1>\n      <h2>The
+        Steam Community is currently unavailable.  Please try again later.</h2>\n
+        \     <br><br><br><br><br>\n      <p>Error 503 Service Unavailable</p>\n      <p>XID:
+        2589750009</p>\n    </div>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:48 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530/friends?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '798'
+      Date:
+      - Sat, 22 Dec 2012 07:18:49 GMT
+      X-Varnish:
+      - '2589751106'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html>\n<html>\n
+        \ <head>\n    <title>Sorry!</title>\n  </head>\n  <body style=\"background-color:
+        #000000; color: #ffffff;font-family: Arial, Helvetica, sans-serif; font-size:
+        12px; background-image: url( 'http://cdn.store.steampowered.com/public/images/v5/content_bg.png');
+        background-repeat: repeat-x; background-position: top;) \">\n    <div style=\"width:
+        940px; margin: 16px auto;\">\n      <img src=\"http://cdn.store.steampowered.com/public/images/v5/globalheader_logo.png\"
+        style=\"float: right; margin-top: 30px;\">\n      <br><h1>Sorry</h1>\n      <h2>The
+        Steam Community is currently unavailable.  Please try again later.</h2>\n
+        \     <br><br><br><br><br>\n      <p>Error 503 Service Unavailable</p>\n      <p>XID:
+        2589751106</p>\n    </div>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:49 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530/friends?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Server:
+      - Varnish
+      Retry-After:
+      - '0'
+      Content-Type:
+      - text/html; charset=utf-8
+      Content-Length:
+      - '798'
+      Date:
+      - Sat, 22 Dec 2012 07:18:50 GMT
+      X-Varnish:
+      - '2589752216'
+      Age:
+      - '0'
+      Via:
+      - 1.1 varnish
+      Connection:
+      - close
+    body:
+      encoding: US-ASCII
+      string: ! "\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE html>\n<html>\n
+        \ <head>\n    <title>Sorry!</title>\n  </head>\n  <body style=\"background-color:
+        #000000; color: #ffffff;font-family: Arial, Helvetica, sans-serif; font-size:
+        12px; background-image: url( 'http://cdn.store.steampowered.com/public/images/v5/content_bg.png');
+        background-repeat: repeat-x; background-position: top;) \">\n    <div style=\"width:
+        940px; margin: 16px auto;\">\n      <img src=\"http://cdn.store.steampowered.com/public/images/v5/globalheader_logo.png\"
+        style=\"float: right; margin-top: 30px;\">\n      <br><h1>Sorry</h1>\n      <h2>The
+        Steam Community is currently unavailable.  Please try again later.</h2>\n
+        \     <br><br><br><br><br>\n      <p>Error 503 Service Unavailable</p>\n      <p>XID:
+        2589752216</p>\n    </div>\n  </body>\n</html>\n"
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:50 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/profiles/76561197960435530/friends?xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 302
+      message: !binary |-
+        Rm91bmQ=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1UaHUsIDIxLURlYy0y
+        MDE3IDA3OjE4OjUzIEdNVDsgcGF0aD0v
+      - !binary |-
+        c2Vzc2lvbmlkPU1qRXhPREExT0RjM05RJTNEJTNEOyBwYXRoPS8=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwODoxODo1MyBHTVQ=
+      !binary "TG9jYXRpb24=":
+      - !binary |-
+        aHR0cDovL3N0ZWFtY29tbXVuaXR5LmNvbS9pZC9yb2JpbndhbGtlci9mcmll
+        bmRzP3htbD0xJmw9ZW5nbGlzaA==
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC9odG1sOyBjaGFyc2V0PVVURi04
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjY=
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwNzoxODo1MyBHTVQ=
+      !binary "WC1WYXJuaXNo":
+      - !binary |-
+        MjU4OTc1MzM0MA==
+      !binary "QWdl":
+      - !binary |-
+        MA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAwIAAAD//wMAAAAAAAAAAAA=
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:53 GMT
+- request:
+    method: get
+    uri: http://steamcommunity.com/id/robinwalker/friends?l=english&xml=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - Steam_Language=english; sessionid=MjExODA1ODc3NQ==
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "U2VydmVy":
+      - !binary |-
+        QXBhY2hl
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        U3RlYW1fTGFuZ3VhZ2U9ZW5nbGlzaDsgZXhwaXJlcz1UaHUsIDIxLURlYy0y
+        MDE3IDA3OjE4OjU2IEdNVDsgcGF0aD0v
+      - !binary |-
+        c2Vzc2lvbmlkPU5qTTNNVFkwT1RNMzsgcGF0aD0v
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwODoxODo1NiBHTVQ=
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "VmFyeQ==":
+      - !binary |-
+        QWNjZXB0LUVuY29kaW5n
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        dGV4dC94bWw7IGNoYXJzZXQ9dXRmLTg=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTcxMw==
+      !binary "RGF0ZQ==":
+      - !binary |-
+        U2F0LCAyMiBEZWMgMjAxMiAwNzoxODo1NiBHTVQ=
+      !binary "WC1WYXJuaXNo":
+      - !binary |-
+        MjU4OTc1NzMxOQ==
+      !binary "QWdl":
+      - !binary |-
+        MA==
+      !binary "Vmlh":
+      - !binary |-
+        MS4xIHZhcm5pc2g=
+      !binary "Q29ubmVjdGlvbg==":
+      - !binary |-
+        a2VlcC1hbGl2ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        KAAA
+    http_version: 
+  recorded_at: Sat, 22 Dec 2012 07:18:56 GMT
+recorded_with: VCR 2.3.0
