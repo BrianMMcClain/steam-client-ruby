@@ -3,6 +3,15 @@ require 'crack'
 require 'json'
 
 module SteamClient
+  
+  module Error
+  	class PrivateProfileError < StandardError
+  		def message
+  			"This profile is private"
+  		end
+  	end
+  end
+  
   class Client
     
     attr_reader :api_key
@@ -77,6 +86,11 @@ module SteamClient
       url = "http://steamcommunity.com/profiles/#{id}/games\?tab=all&xml\=1"
       xml = get_with_retries url
       hGames = Crack::XML.parse xml
+      
+      if hGames['gamesList'].has_key?("error") and hGames['gamesList']['error'] =~ /This profile is private/
+        raise SteamClient::Error::PrivateProfileError
+      end
+      
       games = []
       hGames['gamesList']['games']['game'].each do |game|
           games << Game.new(game)
