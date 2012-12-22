@@ -19,10 +19,4 @@ describe SteamClient::Profile do
 	      	profile.onlineState.should be SteamClient::OnlineState::UNKNOWN
 	    end
 	end
-
-	it "should throw an error on an invalid ID" do
-		VCR.use_cassette('steam_invalid_id') do
-	  		lambda {@client.find_profile_by_id("1")}.should raise_error SteamClient::Error::ProfileNotFound
-	  	end
-  	end
 end
