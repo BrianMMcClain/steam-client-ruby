@@ -3,7 +3,7 @@ require 'spec_helper'
 describe SteamClient::Profile do 
 
 	it "Should be parsed from XML" do
-		VCR.use_cassette('steam_profile', :record => :new_episodes) do
+		VCR.use_cassette('steam_profile') do
 			profile = @client.find_profile_by_name("robinwalker")
 
 	    	profile.class.should be SteamClient::Profile
@@ -21,7 +21,7 @@ describe SteamClient::Profile do
 	end
 
 	it "should throw an error on an invalid ID" do
-		VCR.use_cassette('steam_invalid_id', :record => :new_episodes) do
+		VCR.use_cassette('steam_invalid_id') do
 	  		lambda {@client.find_profile_by_id("1")}.should raise_error SteamClient::Error::ProfileNotFound
 	  	end
   	end
